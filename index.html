@@ -2,32 +2,45 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dana Lazarte Miranda</title>
-  <link rel="stylesheet" href="styles/styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio Dana Lazarte</title>
+  <link rel="stylesheet" href="/styles/styles.css" />
 </head>
 <body>
 
+  <!-- Botón hamburguesa -->
+  <button id="menu-btn" aria-label="Abrir menú">&#9776;</button>
+
+  <!-- Sidebar -->
+  <nav id="sidebar" class="sidebar-closed" aria-hidden="true">
+    <ul>
+      <li><a href="#sobre-mi" onclick="toggleSidebar()">Sobre mí</a></li>
+      <li><a href="#portafolio" onclick="toggleSidebar()">Portafolio</a></li>
+      <li><a href="/CV ACTUALIZADO 2025 (1).pdf" download>Descargar CV</a></li>
+      <li><a href="https://www.linkedin.com/in/dana-lazarte-miranda-a999b91a0" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="mailto:danalazarte7@gmail.com">Email</a></li>
+    </ul>
+  </nav>
+
   <!-- VIDEO DE FONDO -->
-  <video autoplay muted loop playsinline class="background-video">
-    <source src="videos/7385122-sd_426_240_30fps.mp4" type="video/mp4">
+  <video autoplay muted loop playsinline class="background-video" aria-label="Video de fondo decorativo" tabindex="-1" role="presentation">
+    <source src="/videos/7385122-sd_426_240_30fps.mp4" type="video/mp4" />
     Tu navegador no soporta video HTML5.
   </video>
 
   <!-- CONTENIDO PRINCIPAL -->
   <main class="main-content">
-    <img src="img/IMG_8508.jpeg" alt="Dana Lazarte" class="profile-img" />
+    <img src="img/IMG_8508.jpeg" alt="Foto de Dana Lazarte" class="profile-img" />
     <h1 class="floating-title">Hi<span class="dot">.</span><br>I'm Dana<span class="dot">.</span></h1>
 
     <p class="roles">Diseñadora. Proactiva. Resolutiva.</p>
     <p class="status"><em>Actualmente:</em> Programadora Junior.</p>
 
-    <nav class="buttons">
+    <nav class="buttons" aria-label="Navegación principal">
       <a href="#sobre-mi">Sobre mí</a>
       <a href="#portafolio">Portafolio</a>
       <a href="/CV ACTUALIZADO 2025 (1).pdf" download>Descargar CV</a>
-      <a href="https://www.linkedin.com/in/dana-lazarte-miranda-a999b91a0" target="_blank">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/dana-lazarte-miranda-a999b91a0" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       <a href="mailto:danalazarte7@gmail.com">Email</a>
     </nav>
   </main>
@@ -46,6 +59,8 @@
       Aún no tengo proyectos publicados, pero estoy trabajando en ideas que mostraré pronto aquí. 💻
     </p>
   </section>
+
+  <script src="main.js"></script>
 
 </body>
 </html>
